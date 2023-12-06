@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <style>
+            body {
+                height: 100%;
+                width: 100%;
+                font-family: Arial, Helvetica, sans-serif;
+                margin: auto;
+            }
+            #search {
+                display: flexbox;
+                flex-wrap: wrap;
+                width: 590px;
+                height: 142px;
+                margin: auto;
+                margin-top: 125px;
+                text-align: center;
+            }
+            #bar {
+                width: 550px;
+                height: 44px;
+                border-radius: 50px;
+                border: 1px solid #DFE1E5;
+                padding-left: 25px;
+                font-size: 16px;
+            }
+            #button {
+                margin: auto;
+                margin-top: 30px;
+                border: none;
+                padding: 12px 17px 12px 17px;
+                background-color: #F8F9FA;
+                color: #3C4043;
+                font-size: 14px;
+                border-radius: 5px;
+                margin-right: 8px;
+            }
+            #button:hover {
+                border: 1px solid #DADCE0;
+                box-shadow: 0 0.5px 1px rgb(0, 0, 0, 0.2);
+                padding: 11px 16px 11px 16px;
+            }
+            #bar:hover {
+                border: none;
+                box-shadow: 0 1px 5px rgb(0, 0, 0, 0.2);
+                height: 46px;
+            }
+            #bar:focus {
+                outline: none;
+                border: none;
+                box-shadow: 0 1px 5px rgb(0, 0, 0, 0.2);
+            }
+            .links {
+                text-align: right;
+                margin-right: 40px;
+                margin-top: 25px;
+            }
+            .links > a {
+                margin-left: 10px;
+                font-size: 13px;
+                color: #212121;
+                text-decoration: none;
+            }
+            .links > a:hover {
+                text-decoration: underline;
+            }
+            img {
+                width: 270px;
+                margin-bottom: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="https://www.google.com/search">
+            <div class="links">
+                <a href="image.html">Image Search</a>
+                <a href="advanced.html">Advanced Search</a>
+            </div>
+            <div id="search">
+                <img src="google-logo.webp" alt="Google Logo">
+                <input type="text" name="q" id="bar">
+                <input type="submit" value="Google Search" id="button">
+                <input type="submit" name="btnI" value="I'm Feeling Lucky" id="button">
+            </div>
+        </form>
+    </body>
+</html>

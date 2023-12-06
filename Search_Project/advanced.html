@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Advanced Search</title>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                margin: auto;
+            }
+            .advanced-filters {
+                display: grid;
+                grid-template-columns: 225px 575px auto;
+                grid-row-gap: 12px;
+                width: 90%;
+                text-align: left;
+            }
+            #bar {
+                width: 550px;
+                height: 26.5px;
+                border: 1px solid #C0C0C0;
+                padding: 0px 8px 0px 8px;
+                font-size: 13px;
+            }
+            #button {
+                margin: auto;
+                border: none;
+                padding: 8px 13px 8px 13px;
+                border-radius: 2px;
+                margin-right: 8px;
+                margin-top: 10px;
+                font-weight: 700;
+                font-size: 11px;
+                color: #ffffff;
+                background-color: #478AF8;
+                border: 1px solid #3079ED;
+            }
+            #button:hover {
+                box-shadow: inset 0 -1px 10px rgb(0, 0, 0, 0.2);
+            }
+            #button:active {
+                background-color: #3f80e8;
+            }
+            .links {
+                display: flexbox;
+                text-align: right;
+                margin-right: 40px;
+                margin-top: -25px;
+            }
+            .links > a {
+                margin-left: 10px;
+                font-size: 13px;
+                color: #212121;
+                text-decoration: none;
+            }
+            .links > a:hover {
+                text-decoration: underline;
+            }
+            img {
+                width: 73px;
+                margin-left: 20px;
+                margin-top: 20px;
+            }
+            h3 {
+                color: rgb(206, 0, 0);
+                font-weight: 400;
+                font-size: 20px;
+                margin-left: 45px;
+                margin-top: 45px;
+            }
+            hr {
+                border: 0.5px solid rgb(227, 227, 227);
+                margin-top: 25px;
+            }
+            h4 {
+                font-weight: 400;
+                margin-left: 45px;
+                margin-top: 40px;
+            }
+            h6 {
+                font-weight: normal;
+                margin: auto;
+                margin-top: 3px;
+                margin-left: 45px;
+                font-size: 13px;
+            }
+            h5 {
+                color: #777777;
+                font-weight: 700;
+                font-size: 13px;
+                padding-top: 22px;
+            }
+            p {
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: normal;
+                font-size: 11px;
+                margin: auto;
+                margin-left: 5px;
+                color: #555555;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="google-logo.webp" alt="Google Logo">
+        <div class="links">
+            <a href="index.html">Google Search</a>
+        </div>
+        <h3>Advanced Search</h3>
+        <hr>
+        <form class="advanced-filters" action="https://www.google.com/search">
+            <h4>Find pages with...</h4>
+            <h4></h4>
+            <h5>Do this in the search box.</h5>
+            
+            <h6>all these words:</h6>
+            <input type="text" name="as_q" value="" id="bar">
+            <p>Enter the important words: <span style="font-family: monospace;">tricolor rat terrier</span></p>
+            
+            <h6>this exact expression or phrase:</h6>
+            <input type="text" name="as_epq" value="" id="bar">
+            <p>Place exact words in quotation marks:<span style="font-family: monospace;">"rat terrier"</span></p>
+            
+            <h6>any of these words:</h6>
+            <input type="text" name="as_oq" value="" id="bar">
+            <p>Type OR between all the words you are looking for: <span style="font-family: monospace;"><br>thumbnail OR standard</h6>
+            
+            <h6>none of these words:</h6>
+            <input type="text" name="as_eq" value="" id="bar">
+            <p>none of these words:
+                Put a minus sign in front of the words you don't want: <span style="font-family: monospace;"><br>-rodent, -"Jack Russell"</span></p>
+            
+            <h4></h4>
+            <input type="submit" value="Advanced Search" id="button">
+            <h4></h4>
+        </form>
+    </body>
+</html>
